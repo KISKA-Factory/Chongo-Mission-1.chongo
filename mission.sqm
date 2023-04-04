@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=6225;
+		nextID=6233;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2936.813,233.71056,2701.3127};
-		dir[]={0.12235822,-0.68695533,0.71634954};
-		up[]={0.11566267,0.72669464,0.67714918};
-		aside[]={0.98573732,-2.7840542e-007,-0.16837147};
+		pos[]={2855.9639,58.335461,2977.864};
+		dir[]={-0.53507417,-0.39175388,-0.74865013};
+		up[]={-0.22784454,0.91998404,-0.31879684};
+		aside[]={-0.8136701,1.6139529e-006,0.5815357};
 	};
 };
 binarizationWanted=0;
@@ -291,7 +291,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=23;
+		items=21;
 		class Item0
 		{
 			dataType="Comment";
@@ -4711,7 +4711,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=5;
+								items=6;
 								class Item0
 								{
 									dataType="Logic";
@@ -5109,9 +5109,52 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item5
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={2864.0879,43.293339,2913.1775};
+										angles[]={6.2598572,6.2676311,0.066567369};
+									};
+									areaSize[]={6.2434635,0,8.6948366};
+									flags=1;
+									id=6226;
+									type="ModuleHideTerrainObjects_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="#filter";
+											expression="_this setVariable [""#filter"",_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=15;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="#hideLocally";
+											expression="_this setVariable [""#hideLocally"",_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=1172;
-							atlOffset=0.80529404;
+							atlOffset=0.17629623;
 						};
 						class Item1
 						{
@@ -6307,7 +6350,7 @@ class Mission
 						};
 					};
 					id=252;
-					atlOffset=-0.028572083;
+					atlOffset=-0.67067337;
 				};
 				class Item2
 				{
@@ -11181,7 +11224,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=21;
+								items=26;
 								class Item0
 								{
 									dataType="Object";
@@ -11529,9 +11572,91 @@ class Mission
 									type="Land_GarbageContainer_open_F";
 									atlOffset=-0.0027656555;
 								};
+								class Item21
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2789.8442,44.794907,3029.0872};
+										angles[]={6.276526,4.4327755,6.2731848};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=6227;
+									type="Land_Garbage_square5_F";
+								};
+								class Item22
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2836.9507,46.515305,2966.2402};
+										angles[]={0.00034526698,1.3218555,0.0093796114};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=6229;
+									type="Land_FieldToilet_F";
+									atlOffset=3.8146973e-006;
+								};
+								class Item23
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2836.3782,46.499607,2968.3838};
+										angles[]={0.0072588385,1.3049023,0.0093796114};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=6230;
+									type="Land_FieldToilet_F";
+								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2836.4426,45.91156,2963.6985};
+										angles[]={6.2822089,2.9133842,0.0078808861};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=6231;
+									type="Land_Sink_F";
+									atlOffset=3.8146973e-006;
+								};
+								class Item25
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2838.3801,45.992332,2964.0554};
+										angles[]={0.00034526698,4.4705496,0.0016558425};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=6232;
+									type="Land_WaterTank_F";
+								};
 							};
 							id=2830;
-							atlOffset=0.012645721;
+							atlOffset=0.00074386597;
 						};
 						class Item3
 						{
@@ -16264,7 +16389,7 @@ class Mission
 						};
 					};
 					id=1349;
-					atlOffset=-1.391777;
+					atlOffset=-1.367363;
 				};
 				class Item3
 				{
@@ -16821,7 +16946,7 @@ class Mission
 				};
 			};
 			id=69;
-			atlOffset=-3.1015778;
+			atlOffset=-3.1239204;
 		};
 		class Item2
 		{
@@ -16894,25 +17019,13 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={2867.2649,43.203999,2885.1221};
-				angles[]={0.0066682254,0,0.056607127};
-			};
-			title="Remove trees that aircraft would impact";
-			id=2840;
-			atlOffset=-0.00020599365;
-		};
-		class Item7
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
 				position[]={2747.3459,42.068001,2936.3291};
 			};
 			title="Add guard posts";
 			id=2842;
 			atlOffset=0.00017929077;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16923,7 +17036,7 @@ class Mission
 			id=2843;
 			atlOffset=-3.4332275e-005;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16934,7 +17047,7 @@ class Mission
 			id=2844;
 			atlOffset=-7.6293945e-006;
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16945,7 +17058,7 @@ class Mission
 			id=2845;
 			atlOffset=-7.6293945e-006;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16955,7 +17068,7 @@ class Mission
 			title="Fill with ops center and living quarters";
 			id=2846;
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16966,7 +17079,7 @@ class Mission
 			id=2847;
 			atlOffset=4.3179817;
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16977,7 +17090,7 @@ class Mission
 			title="Add  lots of vehicles including humvess";
 			id=2848;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16988,7 +17101,7 @@ class Mission
 			id=2849;
 			atlOffset=0.00038909912;
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -16999,7 +17112,7 @@ class Mission
 			id=2850;
 			atlOffset=0.00022125244;
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -17010,7 +17123,7 @@ class Mission
 			id=2851;
 			atlOffset=1.1444092e-005;
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17082,7 +17195,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17154,41 +17267,18 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={2829.6421,45.405998,3001.8879};
+				position[]={2829.6912,45.397419,2996.5586};
+				angles[]={6.2813587,0,0.0029700999};
 			};
 			title="racing planes as simple objects";
 			id=2855;
-			atlOffset=-0.00030517578;
 		};
-		class Item20
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={2791.3811,44.752998,3029.217};
-			};
-			title="trash";
-			id=2856;
-			atlOffset=0.00021362305;
-		};
-		class Item21
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={2836.769,45.294388,2966.2998};
-				angles[]={0.00034526698,0,0.0093796114};
-			};
-			title="bathroom facilities and trash";
-			id=2857;
-			atlOffset=3.8146973e-006;
-		};
-		class Item22
+		class Item19
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -17198,6 +17288,17 @@ class Mission
 			};
 			title="Lights for night ops";
 			id=2859;
+		};
+		class Item20
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={2841.3811,45.312588,2973.7502};
+				angles[]={0.00077204045,0,0.003797939};
+			};
+			title="Some vehicles such as trucks";
+			id=6228;
 		};
 	};
 };
