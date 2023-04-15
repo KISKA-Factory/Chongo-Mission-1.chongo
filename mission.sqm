@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=13961;
+		nextID=13964;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6121.25,217.58527,10359.122};
-		dir[]={-0.10911629,-0.92668539,0.36001697};
-		up[]={-0.2687833,0.37583542,0.8867895};
-		aside[]={0.95709562,-3.1157688e-006,0.29009539};
+		pos[]={2890.6379,54.427132,3040.6577};
+		dir[]={-0.29396504,-0.24903639,0.92292553};
+		up[]={-0.075607121,0.96844095,0.23737469};
+		aside[]={0.95293427,9.6025178e-007,0.30352694};
 	};
 };
 binarizationWanted=0;
@@ -477,7 +477,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=22;
 		class Item0
 		{
 			dataType="Layer";
@@ -52050,6 +52050,40 @@ class Mission
 			title="TODO: Vehicles?";
 			id=13960;
 			atlOffset=-0.0001449585;
+		};
+		class Item19
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={6138.8892,55.261162,10360.72};
+				angles[]={0.023918876,0,6.220439};
+			};
+			title="TODO: Patrols";
+			id=13961;
+		};
+		class Item20
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={6140.043,55.299999,10353.772};
+				angles[]={0.023918876,0,6.220439};
+			};
+			title="TODO: Radio Objective";
+			id=13962;
+			atlOffset=-0.00018310547;
+		};
+		class Item21
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={2790.447,42.789001,3062.0291};
+			};
+			title="TODO: Shooting range";
+			id=13963;
+			atlOffset=-0.00011825562;
 		};
 	};
 };
