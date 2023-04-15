@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=13959;
+		nextID=13961;
 	};
 	class LayerIndexProvider
 	{
@@ -477,7 +477,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=17;
+		items=19;
 		class Item0
 		{
 			dataType="Layer";
@@ -52028,6 +52028,28 @@ class Mission
 			title="TODO: turrets";
 			id=13958;
 			atlOffset=0.0001449585;
+		};
+		class Item17
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={6130.2388,56.042999,10380.595};
+			};
+			title="TODO: Simples";
+			id=13959;
+			atlOffset=0.00033187866;
+		};
+		class Item18
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={6133.355,55.784,10370.639};
+			};
+			title="TODO: Vehicles?";
+			id=13960;
+			atlOffset=-0.0001449585;
 		};
 	};
 };
