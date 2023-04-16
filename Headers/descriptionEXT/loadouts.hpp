@@ -2,7 +2,16 @@ class KISKA_RandomGear
 {
 	class Vanilla
 	{
-		class B_Soldier_unarmed_F 
+		class VanillaBase 
+		{
+			uniforms[] = {
+				"U_B_CombatUniform_mcam_vest",
+				"U_B_CombatUniform_mcam_tshirt",
+				"U_B_CombatUniform_mcam"
+			};
+		};
+
+		class B_Soldier_unarmed_F : VanillaBase
 		{
 			vests[] = {
 				"", // empty
@@ -30,23 +39,13 @@ class KISKA_RandomGear
 				"G_Shades_Green",
 				"G_Aviator"
 			};
-			uniforms[] = {
-				"U_B_CombatUniform_mcam_vest",
-				"U_B_CombatUniform_mcam_tshirt",
-				"U_B_CombatUniform_mcam"
-			};
 			handguns[] = {
 				{"hgun_Pistol_heavy_01_F"}
 			};
 		};
 
-		class B_Soldier_lite_F
+		class B_Soldier_lite_F : VanillaBase
 		{
-			uniforms[] = {
-				"U_B_CombatUniform_mcam_vest",
-				"U_B_CombatUniform_mcam_tshirt",
-				"U_B_CombatUniform_mcam"
-			};
 			headgear[] = {
 				"H_Booniehat_khk_hs",
 				"H_HelmetB",
