@@ -30,5 +30,47 @@ class Airbase
 				exitOnCombat = OFF;
 			};
 		};
+
+		class StangindUnarmed
+		{
+			positions = "Airbase - Ambient Standing Unarmed";
+			numberOfAgents = -1;
+			infantryClasses[] = { "B_Soldier_unarmed_F" };
+			dynamicSim = ON;
+			canPath = OFF;
+			
+			class AmbientAnim
+			{
+				animationSet[] = {
+					"STAND_UNARMED_1",
+					"STAND_UNARMED_2",
+					"STAND_UNARMED_3"
+				};
+
+				equipmentLevel = "";
+
+				exitOnCombat = OFF;
+			};
+		};
+		class StangindArmed
+		{
+			positions = "Airbase - Ambient Standing Armed";
+			numberOfAgents = -1;
+			infantryClasses[] = { "B_Soldier_lite_F" };
+			dynamicSim = ON;
+			canPath = OFF;
+			
+			class AmbientAnim
+			{
+				animationSet[] = {
+					"STAND_ARMED_1",
+					"STAND_ARMED_2"
+				};
+
+				equipmentLevel = "";
+
+				exitOnCombat = OFF;
+			};
+		};
 	};
 };

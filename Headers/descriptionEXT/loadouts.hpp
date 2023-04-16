@@ -40,6 +40,47 @@ class KISKA_RandomGear
 			};
 		};
 
-		
+		class B_Soldier_lite_F
+		{
+			uniforms[] = {
+				"U_B_CombatUniform_mcam_vest",
+				"U_B_CombatUniform_mcam_tshirt",
+				"U_B_CombatUniform_mcam"
+			};
+			headgear[] = {
+				"H_Booniehat_khk_hs",
+				"H_HelmetB",
+				"H_HelmetB_sand",
+				"H_HelmetB_snakeskin",
+				"H_HelmetSpecB",
+				"H_HelmetSpecB_sand",
+				"H_HelmetSpecB_paint2",
+				"H_HelmetSpecB_snakeskin",
+				"H_HelmetB_light",
+				"H_HelmetB_light_desert",
+				"H_HelmetB_light_sand",
+				"H_HelmetB_light_snakeskin",
+				"H_Cap_oli_hs"
+			};
+			vests[] = {
+				"V_PlateCarrier1_rgr",
+				"V_PlateCarrier2_rgr",
+				"V_CarrierRigKBT_01_light_Olive_F"
+			};
+			primaryWeapons[] = {
+				{"arifle_MX_F",{"optic_Aco","30Rnd_65x39_caseless_mag"}},
+				{"arifle_MX_F",{"optic_Hamr","30Rnd_65x39_caseless_mag"}}
+			};
+			handguns[] = {
+				{"hgun_Pistol_heavy_01_F"}
+			};
+			facewear[] = {
+				"", // empty
+				"G_Shades_Black",
+				"G_Tactical_Clear",
+				"G_Tactical_Black"
+			};
+		};
 	};
 };
+
