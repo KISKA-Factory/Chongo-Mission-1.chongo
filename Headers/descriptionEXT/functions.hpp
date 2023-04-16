@@ -8,6 +8,10 @@ class CHG
 		{};
 		class selectRandomGearFromClass
 		{};
+		class setRandomOffroadTexture
+		{};
+		class setRandomHatchbackTexture
+		{};
 	};
 };
 

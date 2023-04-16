@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=14695;
+		nextID=14704;
 	};
 	class LayerIndexProvider
 	{
-		nextID=835;
+		nextID=902;
 	};
 	class Camera
 	{
-		pos[]={2861.3376,194.80214,3013.4749};
-		dir[]={-0.072103664,-0.96327949,0.25874707};
-		up[]={-0.25857568,0.26856333,0.92790967};
-		aside[]={0.96332645,-1.4427933e-006,0.26844624};
+		pos[]={2846.3228,55.305523,3014.3784};
+		dir[]={-0.79125822,-0.48069921,-0.37794009};
+		up[]={-0.43375918,0.87688547,-0.20718268};
+		aside[]={-0.43100274,0,0.90235054};
 	};
 };
 binarizationWanted=0;
@@ -22032,8 +22032,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2822.7507,44.899189,3039.0093};
-						angles[]={0,5.3822088,0};
+						position[]={2826.79,45.407791,3011.9404};
+						angles[]={6.2816806,2.7832546,0.0055242786};
 					};
 					side="West";
 					flags=6;
@@ -54880,6 +54880,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Light Cars";
+							state=1;
 							class Entities
 							{
 								items=8;
@@ -55025,6 +55026,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Light Aircraft";
+							state=1;
 							class Entities
 							{
 								items=2;
