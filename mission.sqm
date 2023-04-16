@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=14704;
+		nextID=14709;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2846.3228,55.305523,3014.3784};
-		dir[]={-0.79125822,-0.48069921,-0.37794009};
-		up[]={-0.43375918,0.87688547,-0.20718268};
-		aside[]={-0.43100274,0,0.90235054};
+		pos[]={3021.5459,48.575363,2613.4973};
+		dir[]={0.71659118,-0.26250428,-0.64622259};
+		up[]={0.19494711,0.96493059,-0.17580304};
+		aside[]={-0.6697073,-7.2126568e-008,-0.7426343};
 	};
 };
 binarizationWanted=0;
@@ -22032,8 +22032,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2826.79,45.407791,3011.9404};
-						angles[]={6.2816806,2.7832546,0.0055242786};
+						position[]={3036.1675,44.443405,2677.5664};
+						angles[]={6.2749858,3.6500554,0.049884003};
 					};
 					side="West";
 					flags=6;
@@ -54779,16 +54779,17 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Large Aircraft";
+							state=1;
 							class Entities
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={3021.0957,44.528984,2627.3396};
-										angles[]={0.0066682254,1.4019727,6.2465363};
+										position[]={3036.5552,43.646114,2605.1521};
+										angles[]={6.2598572,5.928854,6.2133079};
 									};
 									side="Empty";
 									flags=4;
@@ -54798,8 +54799,25 @@ class Mission
 									id=14649;
 									type="Sign_Arrow_Direction_Pink_F";
 								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2991.28,43.474369,2630.4297};
+										angles[]={0.013332055,1.2608596,0.06656827};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=14706;
+									type="Sign_Arrow_Direction_Pink_F";
+								};
 							};
 							id=14650;
+							atlOffset=-0.75356674;
 						};
 						class Item7
 						{
@@ -55069,11 +55087,11 @@ class Mission
 						};
 					};
 					id=14568;
-					atlOffset=-0.10695648;
+					atlOffset=-0.16661835;
 				};
 			};
 			id=13431;
-			atlOffset=-50.303188;
+			atlOffset=-50.217739;
 		};
 		class Item14
 		{
