@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2837.9885,50.03154,3018.8672};
-		dir[]={0.26215407,-0.35178676,-0.89862448};
-		up[]={0.098519534,0.93607968,-0.3377102};
-		aside[]={-0.95998532,4.0949089e-008,-0.2800546};
+		pos[]={2997.3464,49.945183,2572.4788};
+		dir[]={-0.10715449,-0.25755325,0.96031398};
+		up[]={-0.028561801,0.96626437,0.25597024};
+		aside[]={0.99384224,-2.9154762e-008,0.11089557};
 	};
 };
 binarizationWanted=0;
@@ -508,7 +508,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=19;
 		class Item0
 		{
 			dataType="Layer";
@@ -54343,6 +54343,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Standing Armed";
+							state=1;
 							class Entities
 							{
 								items=16;
@@ -55163,38 +55164,6 @@ class Mission
 			};
 			id=14687;
 			atlOffset=-3.8146973e-006;
-		};
-		class Item19
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2837.345,45.516533,3011.4558};
-						angles[]={6.2821498,0,0.0087073296};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						class Inventory
-						{
-						};
-					};
-					id=14694;
-					type="B_Soldier_lite_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=14693;
 		};
 	};
 };

@@ -52,6 +52,14 @@ class Airbase
 				exitOnCombat = OFF;
 			};
 		};
+
+		class MaintinersRequired : StangindUnarmed
+		{
+			positions = "Airbase - Ambient Maintainers Required";
+			numberOfAgents = -1;
+			infantryClasses[] = { "B_Deck_Crew_F" };
+		};
+
 		class StangindArmed
 		{
 			positions = "Airbase - Ambient Standing Armed";

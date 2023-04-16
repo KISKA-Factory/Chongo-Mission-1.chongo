@@ -1,11 +1,13 @@
 #define UNARMED_BLU_CLASS "B_Soldier_unarmed_F"
 #define ARMED_BLU_CLASS "B_Soldier_lite_F"
+#define MAINTAINER_BLU_CLASS "B_Deck_Crew_F"
 
 scriptName "CHG_fnc_setupLoadouts";
 
 private _bluforClasses = [
 	UNARMED_BLU_CLASS,
-	ARMED_BLU_CLASS
+	ARMED_BLU_CLASS,
+	MAINTAINER_BLU_CLASS
 ];
 
 _bluforClasses apply {

@@ -80,6 +80,25 @@ class KISKA_RandomGear
 				"G_Tactical_Black"
 			};
 		};
+
+		class B_Deck_Crew_F : B_Soldier_unarmed_F
+		{
+			headgear[] = {
+				"H_Cap_marshal",
+				"H_EarProtectors_black_F",
+				"H_EarProtectors_red_F",
+				"H_EarProtectors_white_F"
+			};
+			vests[] = {
+				"V_rangemaster_belt",
+			};
+			facewear[] = {
+				"", // empty
+				"G_Shades_Black",
+				"G_Squares_Tinted",
+				"G_Shades_Green"
+			};
+		};
 	};
 };
 
