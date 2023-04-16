@@ -31,8 +31,15 @@ class KISKA_RandomGear
 				"G_Aviator"
 			};
 			uniforms[] = {
-				"U_B_CombatUniform_mcam_vest"
+				"U_B_CombatUniform_mcam_vest",
+				"U_B_CombatUniform_mcam_tshirt",
+				"U_B_CombatUniform_mcam"
+			};
+			handguns[] = {
+				{"hgun_Pistol_heavy_01_F"}
 			};
 		};
+
+		
 	};
 };

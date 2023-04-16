@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2820.105,46.595154,3054.1572};
-		dir[]={0.69964129,-0.49641356,0.51391238};
-		up[]={0.40018275,0.86801493,0.29394811};
-		aside[]={0.59200257,-6.5250788e-008,-0.8059563};
+		pos[]={2847.4163,53.952858,3013.1567};
+		dir[]={-0.5656538,-0.77501559,-0.28209421};
+		up[]={-0.69363534,0.63182193,-0.34591749};
+		aside[]={-0.44632754,9.6984149e-007,0.89498192};
 	};
 };
 binarizationWanted=0;
@@ -7565,6 +7565,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Airbase - Statics";
+					state=1;
 					class Entities
 					{
 						items=8;
@@ -15031,6 +15032,7 @@ class Mission
 								{
 									dataType="Layer";
 									name="Airbase - Ready Area Clutter";
+									state=1;
 									class Entities
 									{
 										items=265;
