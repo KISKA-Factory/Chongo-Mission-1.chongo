@@ -31,6 +31,26 @@ class Airbase
 			};
 		};
 
+		class Maintiners : SittingInChairUnarmed
+		{
+			positions = "Airbase - Ambient Maintainers";
+			numberOfAgents = -1;
+			infantryClasses[] = { "B_Deck_Crew_F" };
+
+			class AmbientAnim : AmbientAnim
+			{
+				class animationSet : animationSet
+				{
+					backupAnimations[] = {
+						"STAND_UNARMED_1",
+						"STAND_UNARMED_2",
+						"STAND_UNARMED_3"
+					};
+					snapToRange = 5;
+				};
+			};
+		};
+
 		class StangindUnarmed
 		{
 			positions = "Airbase - Ambient Standing Unarmed";

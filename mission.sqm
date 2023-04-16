@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2997.3464,49.945183,2572.4788};
-		dir[]={-0.10715449,-0.25755325,0.96031398};
-		up[]={-0.028561801,0.96626437,0.25597024};
-		aside[]={0.99384224,-2.9154762e-008,0.11089557};
+		pos[]={2861.3376,194.80214,3013.4749};
+		dir[]={-0.072103664,-0.96327949,0.25874707};
+		up[]={-0.25857568,0.26856333,0.92790967};
+		aside[]={0.96332645,-1.4427933e-006,0.26844624};
 	};
 };
 binarizationWanted=0;
@@ -54106,6 +54106,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Maintainers";
+							state=1;
 							class Entities
 							{
 								items=14;
@@ -54114,8 +54115,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2876.7302,45.950684,3043.0964};
-										angles[]={6.2336264,2.4988446,0.027965406};
+										position[]={2877.2854,45.890331,3041.4648};
+										angles[]={6.2390728,5.9873805,0.035379499};
 									};
 									side="Empty";
 									flags=4;
@@ -54124,14 +54125,13 @@ class Mission
 									};
 									id=14596;
 									type="Sign_Arrow_Direction_F";
-									atlOffset=3.8146973e-006;
 								};
 								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2878.231,45.975155,3042.5618};
+										position[]={2878.5649,45.999432,3042.8135};
 										angles[]={6.2336264,4.3267031,0.035279937};
 									};
 									side="Empty";
@@ -54147,7 +54147,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2876.491,45.858528,3041.3347};
+										position[]={2876.1868,45.860142,3041.5872};
 										angles[]={6.2390728,0.49929255,0.031333189};
 									};
 									side="Empty";
@@ -54337,7 +54337,7 @@ class Mission
 								};
 							};
 							id=14595;
-							atlOffset=0.013183594;
+							atlOffset=0.013187408;
 						};
 						class Item3
 						{
@@ -54687,6 +54687,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Maintainers Required";
+							state=1;
 							class Entities
 							{
 								items=5;

@@ -93,10 +93,10 @@ class KISKA_RandomGear
 				"V_rangemaster_belt",
 			};
 			facewear[] = {
-				"", // empty
-				"G_Shades_Black",
-				"G_Squares_Tinted",
-				"G_Shades_Green"
+				"", 0.6, // empty
+				"G_Shades_Black", 0.2,
+				"G_Squares_Tinted", 0.1,
+				"G_Shades_Green", 0.1
 			};
 		};
 	};
