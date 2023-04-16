@@ -1,7 +1,13 @@
-#define VANILLA_FILTER "localNamespace getVariable ['CHG_blufor_lightCarId','vanilla'] == 'vanilla'"
+#define VANILLA_LIGHT_CAR_FILTER "localNamespace getVariable ['CHG_blufor_lightCarId','vanilla'] == 'vanilla'"
 class VanillaLightCarBase {
-	filterCondition = VANILLA_FILTER;
+	filterCondition = VANILLA_LIGHT_CAR_FILTER;
 };
+
+#define VANILLA_LARGE_AIRCRAFT_FILTER "localNamespace getVariable ['CHG_blufor_largeAircraftId','vanilla'] == 'vanilla'"
+class VanillaLargeAircraftBase {
+	filterCondition = VANILLA_LARGE_AIRCRAFT_FILTER;
+};
+
 
 
 class Airbase
@@ -157,15 +163,27 @@ class Airbase
 		class LargeAircraft
 		{
 			positions = "Airbase - Ambient Large Aircraft";
-			class BlackFishArmed
+			class BlackFishArmed : VanillaLargeAircraftBase
 			{
-				filterCondition = VANILLA_FILTER;
 				type = "B_T_VTOL_01_armed_F";
 				offset[] = {0,0,-0.15};
 			};
 			class BlackFishUnarmed : BlackFishArmed
 			{
 				type = "B_T_VTOL_01_infantry_F";
+			};
+
+
+		};
+
+		class FuelTrucks
+		{
+			positions = "Airbase - Ambient Fuel Trucks";
+			class FuelTruck
+			{
+				superSimple = OFF;
+				type = "B_Truck_01_fuel_F";
+				offset[] = {0,0,0.9};
 			};
 		};
 	};
