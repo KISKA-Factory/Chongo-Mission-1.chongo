@@ -45,12 +45,14 @@ class KISKA_Bases
         // and onUnitsCreated is instead onAgentsCreated
         class agents
         {
-            // if -1, number of available positions is used this can only max out at the number of available positions
-            numberOfAgents = -1;
-            // script that is compiled once and called with all units after all are created
-                // params: 0: <ARRAY> - the created units
-            onAgentsCreated = "";
-        };
+            class agentGroup_1
+            {
+                // if -1, number of available positions is used this can only max out at the number of available positions
+                numberOfAgents = -1;
+                // script that is compiled once and called with all units after all are created
+                    // params: 0: <ARRAY> - the created units
+                onAgentsCreated = "";
+            };        };
 
         class infantry
         {
@@ -86,22 +88,39 @@ class KISKA_Bases
                 // used to creat the animation affects
                 class AmbientAnim
                 {
-                    // an array of animation sets to randomly choose from
-                    // or a single string animation set
+                    // The "animationSet" property will determine what animations may play on the unit
+                    // The "animationSet" property can be either a class, string[] (array), or string.
+                    // animationSet refers to a definition of a collection of certain animations
                     // Default animation sets are defined in the configFile >> "KISKA_AmbientAnimations" class
+
+                    // An array means that an animation set will be randomly selected from the array
+                    /// for each unit in created by infantrySpawnSet_1
+                    /// This array can be weighted or unweighted ({"set1",0.5,"set2",0.5})
                     // animationSet[] = {};
+
+                    // A string for animationSet will mean that every unit will have this animation applied to them
                     // animationSet = "";
+
+                    // A class for animationSet is used for snapping animations
+                    // It also enables the use of units that might stand an might not
+                    /// due to it having the ability to detect when a unit can't find
+                    /// something to snap to
                     class animationSet
                     {
                         // snapToAnimations = "";
                         snapToAnimations[] = {
                             ""
                         };
+                        // "backupAnimations" are used in lieu of the unit successfully being able to snap to an object
                         // backupAnimations = "";
                         backupAnimations[] = {
-                            "", 1 // both backupAnimations and snapToAnimations can be weighted arrays
+                            // both backupAnimations and snapToAnimations can be weighted arrays
+                            "", 1 
                         };
+                        // "snapToRange" is the radius to search around the unit for potential objects to snap to
+                        // the max radius is 5.
                         snapToRange = 10;
+
                         // should a unit fail to find a nearby object to snap to and no 
                         // backupAnimations are present this function will be run
                         // see KISKA_fnc_ambientAnim for params
@@ -295,4 +314,6 @@ class KISKA_Bases
 
         };
     };
+    
+    #include "Airbase.base.hpp"
 };

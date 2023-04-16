@@ -1,11 +1,13 @@
-/*
-class
+
+class CHG
 {
-	class
+	class MissionSetup
 	{
-		file = "functions\";
-		class
+		file = "functions\Mission Setup";
+		class setupLoadouts
+		{};
+		class selectRandomGearFromClass
 		{};
 	};
 };
-*/
+
