@@ -163,16 +163,17 @@ class Airbase
 		class LargeAircraft
 		{
 			positions = "Airbase - Ambient Large Aircraft";
+
 			class BlackFishArmed : VanillaLargeAircraftBase
 			{
-				type = "B_T_VTOL_01_armed_F";
+				type[] = {"B_T_VTOL_01_armed_F","B_T_VTOL_01_infantry_F"};
 				offset[] = {0,0,-0.15};
+				selections[] = {
+					{"rotor_1_blur",1},
+					{"rotor_2_blur",1},
+					{"rotors_blur",1}
+				};
 			};
-			class BlackFishUnarmed : BlackFishArmed
-			{
-				type = "B_T_VTOL_01_infantry_F";
-			};
-
 
 		};
 
@@ -184,6 +185,20 @@ class Airbase
 				superSimple = OFF;
 				type = "B_Truck_01_fuel_F";
 				offset[] = {0,0,0.9};
+			};
+		};
+
+		class ArmoredCars
+		{
+			positions = "Airbase - Ambient Armored Cars";
+
+			class VanillaArmoredCars
+			{
+				type[] = {
+					"B_MRAP_01_gmg_F", 0.25,
+					"B_MRAP_01_hmg_F", 0.25,
+					"B_MRAP_01_F", 0.5
+				};
 			};
 		};
 	};

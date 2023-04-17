@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=14711;
+		nextID=14715;
 	};
 	class LayerIndexProvider
 	{
-		nextID=902;
+		nextID=1036;
 	};
 	class Camera
 	{
-		pos[]={2917.5596,68.354813,2805.0496};
-		dir[]={-0.33673105,-0.42217502,-0.84165353};
-		up[]={-0.15681982,0.90651429,-0.39196852};
-		aside[]={-0.92845023,1.4901161e-008,0.37145692};
+		pos[]={2868.7488,52.815872,3009.2341};
+		dir[]={-0.89295161,-0.3979058,-0.21049617};
+		up[]={-0.38729063,0.91742623,-0.091296315};
+		aside[]={-0.22944205,0,0.97332239};
 	};
 };
 binarizationWanted=0;
@@ -508,7 +508,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=16;
 		class Item0
 		{
 			dataType="Layer";
@@ -22032,8 +22032,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2904.4465,44.631958,2786.9961};
-						angles[]={0.009442945,3.0438848,0.039335705};
+						position[]={2858.6143,45.605442,2999.9387};
+						angles[]={-0,4.7612982,0.00034526698};
 					};
 					side="West";
 					flags=6;
@@ -22055,36 +22055,13 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={2834.6926,45.415104,3048.2686};
-				angles[]={0.053174015,0,0.035435062};
-			};
-			title="Some vehicles such as trucks";
-			id=2834;
-			atlOffset=-0.049171448;
-		};
-		class Item3
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={2902.6641,44.813999,2771.9199};
-			};
-			title="Fuel Trucks and station";
-			id=2835;
-			atlOffset=-0.00017166138;
-		};
-		class Item4
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
 				position[]={2843.5129,54.943001,2961.6631};
 			};
 			title="Fill with more rugged stuff";
 			id=2839;
 			atlOffset=4.4066238;
 		};
-		class Item5
+		class Item3
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22095,7 +22072,7 @@ class Mission
 			id=2842;
 			atlOffset=0.00017929077;
 		};
-		class Item6
+		class Item4
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22106,7 +22083,7 @@ class Mission
 			id=2843;
 			atlOffset=-3.4332275e-005;
 		};
-		class Item7
+		class Item5
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22117,7 +22094,7 @@ class Mission
 			id=2847;
 			atlOffset=4.3179817;
 		};
-		class Item8
+		class Item6
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22128,7 +22105,7 @@ class Mission
 			title="Add  lots of vehicles including humvess";
 			id=2848;
 		};
-		class Item9
+		class Item7
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22139,7 +22116,7 @@ class Mission
 			id=2849;
 			atlOffset=0.00038909912;
 		};
-		class Item10
+		class Item8
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -22150,7 +22127,7 @@ class Mission
 			title="Lights for night ops";
 			id=2859;
 		};
-		class Item11
+		class Item9
 		{
 			dataType="Layer";
 			name="Village";
@@ -45320,18 +45297,7 @@ class Mission
 			id=8858;
 			atlOffset=1.2227592;
 		};
-		class Item12
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={2826.4595,44.348698,2975.7197};
-				angles[]={0.00077204045,0,0.003797939};
-			};
-			title="Some vehicles such as trucks";
-			id=6228;
-		};
-		class Item13
+		class Item10
 		{
 			dataType="Layer";
 			name="Hidden Markers";
@@ -53549,7 +53515,6 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Chair Sitting Unarmed 1";
-							state=1;
 							class Entities
 							{
 								items=16;
@@ -53558,7 +53523,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2814.1604,45.271011,3041.3931};
+										position[]={2813.946,45.271011,3041.1746};
 									};
 									side="Empty";
 									flags=4;
@@ -53573,7 +53538,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2815.25,45.271011,3039.804};
+										position[]={2815.2988,45.271011,3040.4063};
 									};
 									side="Empty";
 									flags=4;
@@ -53588,7 +53553,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2816.5417,45.271011,3041.7354};
+										position[]={2816.5527,45.271011,3041.9216};
 									};
 									side="Empty";
 									flags=4;
@@ -53603,7 +53568,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2816.2375,45.271011,3042.5315};
+										position[]={2816.084,45.271011,3042.8792};
 									};
 									side="Empty";
 									flags=4;
@@ -53618,7 +53583,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2815.8333,45.271011,3043.5867};
+										position[]={2815.4871,45.271011,3043.9824};
 									};
 									side="Empty";
 									flags=4;
@@ -53633,7 +53598,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2814.0037,45.271011,3047.2815};
+										position[]={2814.1021,45.271011,3047.4167};
 									};
 									side="Empty";
 									flags=4;
@@ -53648,7 +53613,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2811.3621,45.271011,3050.3599};
+										position[]={2811.8723,45.271011,3050.7708};
 									};
 									side="Empty";
 									flags=4;
@@ -53663,7 +53628,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2812.4978,45.271011,3050.938};
+										position[]={2812.2498,45.271011,3051.0896};
 									};
 									side="Empty";
 									flags=4;
@@ -53678,7 +53643,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2811.8899,45.271011,3046.2563};
+										position[]={2811.3787,45.271011,3046.6077};
 									};
 									side="Empty";
 									flags=4;
@@ -53693,7 +53658,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2813.0896,45.271011,3043.7444};
+										position[]={2812.7742,45.271011,3043.8677};
 									};
 									side="Empty";
 									flags=4;
@@ -53708,7 +53673,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2816.1257,45.271011,3030.5898};
+										position[]={2815.9478,45.271011,3030.8408};
 									};
 									side="Empty";
 									flags=4;
@@ -53723,7 +53688,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2820.1614,45.271011,3032.2788};
+										position[]={2819.835,45.271011,3032.304};
 									};
 									side="Empty";
 									flags=4;
@@ -53797,7 +53762,7 @@ class Mission
 								};
 							};
 							id=14569;
-							atlOffset=0.68236542;
+							atlOffset=0.68260574;
 						};
 						class Item1
 						{
@@ -54611,6 +54576,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Airbase - Ambient Fuel Trucks";
+							state=1;
 							class Entities
 							{
 								items=4;
@@ -55093,7 +55059,7 @@ class Mission
 			id=13431;
 			atlOffset=-50.217739;
 		};
-		class Item14
+		class Item11
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -55104,7 +55070,7 @@ class Mission
 			id=13960;
 			atlOffset=-0.0001449585;
 		};
-		class Item15
+		class Item12
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -55115,7 +55081,7 @@ class Mission
 			title="TODO: Patrols";
 			id=13961;
 		};
-		class Item16
+		class Item13
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -55126,7 +55092,7 @@ class Mission
 			id=14563;
 			atlOffset=0.00038909912;
 		};
-		class Item17
+		class Item14
 		{
 			dataType="Group";
 			side="West";
@@ -55155,7 +55121,7 @@ class Mission
 			};
 			id=14685;
 		};
-		class Item18
+		class Item15
 		{
 			dataType="Group";
 			side="West";
