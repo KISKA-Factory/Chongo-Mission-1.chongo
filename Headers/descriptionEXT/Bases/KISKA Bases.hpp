@@ -316,4 +316,5 @@ class KISKA_Bases
     };
     
     #include "Airbase.base.hpp"
+    #include "Village.base.hpp"
 };
