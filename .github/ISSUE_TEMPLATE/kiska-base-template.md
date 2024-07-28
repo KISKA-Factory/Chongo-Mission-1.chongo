@@ -9,7 +9,11 @@ assignees: ''
 ---
 
 ## Description
+
+### Factions
 - What factions should be represented.
+
+### Area Purpose
 - What's the area being used for?
 
 ## Acceptance Goals
