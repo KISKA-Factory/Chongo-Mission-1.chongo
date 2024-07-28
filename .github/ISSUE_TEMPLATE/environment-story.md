@@ -21,7 +21,6 @@ assignees: ''
 - The general tone and aesthetic that should come across when being there.
 
 ## Acceptance Goals
-## Acceptance Goals
 - [ ] Objects are local only, simple, and/or have their simulation disabled unless there is a valid reason as to why they can't or shouldn't be.
 - [ ] Any simulated objects are dynamically simulated unless there is a valid reason why not.
 - [ ] Layers are properly implemented to separate simulated and static objects.
