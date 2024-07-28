@@ -10,8 +10,14 @@ assignees: ''
 ---
 
 ## Description
-- What the area's purpose is in the story.
-- Who occupies the area if anyone.
+
+### Area Purpose
+- What the area's purpose is in the story?
+
+### Who Occupies The Area
+- Who occupies the area if anyone?
+
+### Tone and Aesthetic
 - The general tone and aesthetic that should come across when being there.
 
 ## Acceptance Goals
