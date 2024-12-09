@@ -9,49 +9,125 @@ class VanillaLargeAircraftBase {
 };
 
 
-
 class Airbase
+{
+	class simples
+	{
+		class lightCars
+		{
+			spawnPositions = "Airbase - Ambient Light Cars";
+            class VanillaLightCar_1
+			{
+				superSimple = OFF;
+				type = "C_Offroad_01_F";
+				// animations[] = {
+                //  {"HidePolice",1},
+				// 	{"HideServices",1},
+				// 	{"HideBackpacks",1},
+				// 	{"HideBumper1",1},
+				// 	{"HideBumper2",1},
+				// 	{"HideConstruction",1},
+				// 	{"HideBumper2",1},
+				// 	{"HidePolice",1}
+				// };
+				onObjectCreated = "_this call CHG_fnc_setRandomOffroadTexture";
+			};
+			class VanillaLightCar_2
+			{
+				superSimple = OFF;
+				type = "C_Hatchback_01_F";
+				offset[] = {0,0,0.88};
+				onObjectCreated = "_this call CHG_fnc_setRandomHatchbackTexture";
+			};
+		};
+
+        class LargeAircraft
+        {
+			spawnPositions = "Airbase - Ambient Large Aircraft";
+            class BlackFishArmed
+            {
+                type = "B_T_VTOL_01_armed_F";
+				offset[] = {0,0,-0.15};
+				selections[] = {
+					{"rotor_1_blur",1},
+					{"rotor_2_blur",1},
+					{"rotors_blur",1}
+				};
+            };
+            class BlackFishUnarmed : BlackFishArmed
+            {
+                type = "B_T_VTOL_01_infantry_F";
+            };
+        };
+	};
+
+	class agents
+	{
+		class sets
+		{
+			class SittingInChairUnarmed
+			{
+				spawnPositions = "Airbase - Ambient Chair Sitting Unarmed 1";
+				numberOfUnits = -1;
+				unitClasses[] = {"B_Soldier_unarmed_F"};
+				dynamicSim = ON;
+				canPath = OFF;
+
+				class AmbientAnim
+				{
+					class animationSet
+					{
+						snapToAnimations[] = {
+							"SIT_CHAIR_UNARMED_1",
+							"SIT_CHAIR_UNARMED_2",
+							"SIT_CHAIR_UNARMED_3"
+						};
+
+						snapToRange = 2;
+					};
+
+					equipmentLevel = "";
+
+					exitOnCombat = OFF;
+				};
+			};
+			class Maintiners : SittingInChairUnarmed
+			{
+				spawnPositions = "Airbase - Ambient Maintainers";
+				numberOfUnits = -1;
+				unitClasses[] = { "B_Deck_Crew_F" };
+
+				class AmbientAnim : AmbientAnim
+				{
+					class animationSet : animationSet
+					{
+						backupAnimations[] = {
+							"STAND_UNARMED_1",
+							"STAND_UNARMED_2",
+							"STAND_UNARMED_3"
+						};
+						snapToRange = 5;
+					};
+				};
+			};
+		};
+	};
+};
+class itDoesntmatter
 {
 	side = SIDE_BLUFOR;
 
 	class Agents 
 	{
-		class SittingInChairUnarmed
-		{
-			positions = "Airbase - Ambient Chair Sitting Unarmed 1";
-			numberOfAgents = -1;
-			infantryClasses[] = { "B_Soldier_unarmed_F" };
-			dynamicSim = ON;
-			canPath = OFF;
-			
-			class AmbientAnim
-			{
-				class animationSet
-				{
-					snapToAnimations[] = {
-						"SIT_CHAIR_UNARMED_1",
-						"SIT_CHAIR_UNARMED_2",
-						"SIT_CHAIR_UNARMED_3"
-					};
-
-					snapToRange = 2;
-				};
-
-				equipmentLevel = "";
-
-				exitOnCombat = OFF;
-			};
-		};
-
-		class Maintiners : SittingInChairUnarmed
+		class Maintiners
 		{
 			positions = "Airbase - Ambient Maintainers";
 			numberOfAgents = -1;
 			infantryClasses[] = { "B_Deck_Crew_F" };
 
-			class AmbientAnim : AmbientAnim
+			class AmbientAnim
 			{
-				class animationSet : animationSet
+				class animationSet
 				{
 					backupAnimations[] = {
 						"STAND_UNARMED_1",
@@ -116,6 +192,7 @@ class Airbase
 
 	class simples
 	{
+        
 		class LightCars
 		{
 
@@ -126,7 +203,7 @@ class Airbase
 				superSimple = OFF;
 				type = "C_Offroad_01_F";
 				// animations[] = {
-				// 	{"HidePolice",1},
+                //  {"HidePolice",1},
 				// 	{"HideServices",1},
 				// 	{"HideBackpacks",1},
 				// 	{"HideBumper1",1},
@@ -162,7 +239,6 @@ class Airbase
 
 		class LargeAircraft
 		{
-			positions = "Airbase - Ambient Large Aircraft";
 
 			class BlackFishArmed : VanillaLargeAircraftBase
 			{
