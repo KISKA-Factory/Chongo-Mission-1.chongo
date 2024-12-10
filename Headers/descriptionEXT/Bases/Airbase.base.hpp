@@ -59,6 +59,27 @@ class Airbase
                 type = "B_T_VTOL_01_infantry_F";
             };
         };
+		class FuelTrucks
+		{
+			spawnPositions = "Airbase - Ambient Fuel Trucks";
+			class FuelTruck
+			{
+				superSimple = OFF;
+				type = "B_Truck_01_fuel_F";
+				offset[] = {0,0,0.9};
+			};
+		};
+		class ArmoredCars
+		{
+			spawnPositions = "Airbase - Ambient Armored Cars";
+
+			class VanillaArmoredCars
+			{
+				superSimple = OFF;
+				type = "B_MRAP_01_hmg_F";
+				offset[] = {0,0,0.1};
+			};
+		};
 	};
 
 	class agents
@@ -110,170 +131,91 @@ class Airbase
 					};
 				};
 			};
-		};
-	};
-};
-class itDoesntmatter
-{
-	side = SIDE_BLUFOR;
-
-	class Agents 
-	{
-		class Maintiners
-		{
-			positions = "Airbase - Ambient Maintainers";
-			numberOfAgents = -1;
-			infantryClasses[] = { "B_Deck_Crew_F" };
-
-			class AmbientAnim
+			class StangindUnarmed : SittingInChairUnarmed
 			{
-				class animationSet
+				spawnPositions = "Airbase - Ambient Standing Unarmed";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Soldier_unarmed_F" };
+				
+				class AmbientAnim
 				{
-					backupAnimations[] = {
+					animationSet[] = {
 						"STAND_UNARMED_1",
 						"STAND_UNARMED_2",
 						"STAND_UNARMED_3"
 					};
-					snapToRange = 5;
+
+					equipmentLevel = "";
+
+					exitOnCombat = OFF;
 				};
 			};
-		};
-
-		class StangindUnarmed
-		{
-			positions = "Airbase - Ambient Standing Unarmed";
-			numberOfAgents = -1;
-			infantryClasses[] = { "B_Soldier_unarmed_F" };
-			dynamicSim = ON;
-			canPath = OFF;
-			
-			class AmbientAnim
+			class MaintinersRequired : StangindUnarmed
 			{
-				animationSet[] = {
-					"STAND_UNARMED_1",
-					"STAND_UNARMED_2",
-					"STAND_UNARMED_3"
-				};
-
-				equipmentLevel = "";
-
-				exitOnCombat = OFF;
+				spawnPositions = "Airbase - Ambient Maintainers Required";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Deck_Crew_F" };
 			};
-		};
-
-		class MaintinersRequired : StangindUnarmed
-		{
-			positions = "Airbase - Ambient Maintainers Required";
-			numberOfAgents = -1;
-			infantryClasses[] = { "B_Deck_Crew_F" };
-		};
-
-		class StangindArmed
-		{
-			positions = "Airbase - Ambient Standing Armed";
-			numberOfAgents = -1;
-			infantryClasses[] = { "B_Soldier_lite_F" };
-			dynamicSim = ON;
-			canPath = OFF;
-			
-			class AmbientAnim
+			class StangindArmed
 			{
-				animationSet[] = {
-					"STAND_ARMED_1",
-					"STAND_ARMED_2"
-				};
+				spawnPositions = "Airbase - Ambient Standing Armed";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Soldier_lite_F" };
+				dynamicSim = ON;
+				canPath = OFF;
+				
+				class AmbientAnim
+				{
+					animationSet[] = {
+						"STAND_ARMED_1",
+						"STAND_ARMED_2"
+					};
 
-				equipmentLevel = "";
+					equipmentLevel = "";
 
-				exitOnCombat = OFF;
-			};
-		};
-	};
-
-	class simples
-	{
-        
-		class LightCars
-		{
-
-			positions = "Airbase - Ambient Light Cars";
-
-			class VanillaLightCar_1 : VanillaLightCarBase
-			{
-				superSimple = OFF;
-				type = "C_Offroad_01_F";
-				// animations[] = {
-                //  {"HidePolice",1},
-				// 	{"HideServices",1},
-				// 	{"HideBackpacks",1},
-				// 	{"HideBumper1",1},
-				// 	{"HideBumper2",1},
-				// 	{"HideConstruction",1},
-				// 	{"HideBumper2",1},
-				// 	{"HidePolice",1}
-				// };
-				onObjectCreated = "_this call CHG_fnc_setRandomOffroadTexture";
-			};
-			class VanillaLightCar_2 : VanillaLightCarBase
-			{
-				superSimple = OFF;
-				type = "C_Hatchback_01_F";
-				offset[] = {0,0,0.88};
-				onObjectCreated = "_this call CHG_fnc_setRandomHatchbackTexture";
-			};
-		};
-
-		class SmallAircraft
-		{
-			positions = "Airbase - Ambient Light Aircraft";
-
-			class VanillaSmallPlane
-			{
-				type = "C_Plane_Civil_01_F";
-				offset[] = {0,0,1.1};
-				selections[] = {
-					{"vrtule blur",1}
+					exitOnCombat = OFF;
 				};
 			};
-		};
-
-		class LargeAircraft
-		{
-
-			class BlackFishArmed : VanillaLargeAircraftBase
+			class SitGround
+    		{
+					spawnPositions = "Airbase - Ambient Sit Ground Maintainers";
+					numberOfAgents = -1;
+					unitClasses[] = { "B_Soldier_unarmed_F" };
+					dynamicSim = ON;
+					canPath = OFF;
+				class AmbientAnim 
+				{
+			 		animationSet[] = {
+						"SIT_GROUND_UNARMED"
+					};
+					
+			 		equipmentLevel = "";
+				
+			 		exitOnCombat = OFF;
+			 	};
+    		};
+			class SittingInChairDesk
 			{
-				type[] = {"B_T_VTOL_01_armed_F","B_T_VTOL_01_infantry_F"};
-				offset[] = {0,0,-0.15};
-				selections[] = {
-					{"rotor_1_blur",1},
-					{"rotor_2_blur",1},
-					{"rotors_blur",1}
-				};
-			};
+				spawnPositions = "Airbase - Ambient Sitting Unarmed Desk";
+				numberOfUnits = -1;
+				unitClasses[] = {"B_Soldier_unarmed_F"};
+				dynamicSim = ON;
+				canPath = OFF;
 
-		};
+				class AmbientAnim
+				{
+					class animationSet
+					{
+						snapToAnimations[] = {
+							"SIT_AT_TABLE"
+						};
 
-		class FuelTrucks
-		{
-			positions = "Airbase - Ambient Fuel Trucks";
-			class FuelTruck
-			{
-				superSimple = OFF;
-				type = "B_Truck_01_fuel_F";
-				offset[] = {0,0,0.9};
-			};
-		};
+						snapToRange = 2;
+					};
 
-		class ArmoredCars
-		{
-			positions = "Airbase - Ambient Armored Cars";
+					equipmentLevel = "";
 
-			class VanillaArmoredCars
-			{
-				type[] = {
-					"B_MRAP_01_gmg_F", 0.25,
-					"B_MRAP_01_hmg_F", 0.25,
-					"B_MRAP_01_F", 0.5
+					exitOnCombat = OFF;
 				};
 			};
 		};
