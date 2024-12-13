@@ -73,15 +73,27 @@ class Airbase
 		{
 			spawnPositions = "Airbase - Ambient Armored Cars";
 
-			class VanillaArmoredCars
+			class MrapUnarmed
 			{
 				superSimple = OFF;
-				type = "B_MRAP_01_hmg_F";
+				type = "B_MRAP_01_F";
 				offset[] = {0,0,0.1};
+				weight = 0.5;
+			};
+			class MrapHMG : MrapUnarmed
+			{
+				type = "B_MRAP_01_hmg_F";
+				weight = 0.25;
+			};
+			class MrapGMG : MrapUnarmed
+			{
+				 type = "B_MRAP_01_gmg_F";
+				weight = 0.25;
 			};
 		};
 	};
 
+					
 	class agents
 	{
 		class sets
@@ -218,6 +230,28 @@ class Airbase
 					exitOnCombat = OFF;
 				};
 			};
+			class StangindArmedCA
+			{
+				spawnPositions = "Airbase - Standing Armed CA";
+				numberOfAgents = -1;
+				unitClasses[] = { "I_C_Soldier_Bandit_5_F" };
+				dynamicSim = ON;
+				canPath = OFF;
+				
+				class AmbientAnim
+				{
+					animationSet[] = {
+						"STAND_ARMED_1",
+						"STAND_ARMED_2"
+					};
+
+					equipmentLevel = "";
+
+					exitOnCombat = OFF;
+				};
+			};
 		};
 	};
 };
+
+

@@ -100,5 +100,48 @@ class KISKA_RandomGear
 			};
 		};
 	};
+	class ChongoArmy
+	{
+		class ChongoArmyTemplate
+		{
+			uniforms[] = {
+				"U_I_E_Uniform_01_F",
+				"U_I_E_Uniform_01_shortsleeve_F",
+				"U_I_E_Uniform_01_tanktop_F",
+				"U_I_E_Uniform_01_sweater_F"
+			};
+		};
+		class I_C_Soldier_Bandit_5_F : ChongoArmyTemplate
+		{
+			headgear[] = {
+				"H_HelmetB",
+				"H_HelmetB_sand",
+				"H_Cap_oli",
+				"H_Booniehat_mgrn",
+				"H_Booniehat_khk",
+				"H_Booniehat_eaf",
+				"H_Cap_tan"
+			};
+			vests[] = {
+				"V_TacVest_camo",
+				"V_TacVest_oli",
+			};
+			primaryWeapons[] = {
+				{"arifle_Mk20_plain_F",{"optic_Aco","30Rnd_556x45_Stanag_Tracer_Red"}},
+				{"arifle_Mk20_plain_F",{"30Rnd_556x45_Stanag_Tracer_Red"}}
+			};
+		};
+	};
 };
 
+
+
+//Realized in the middle of doing this that it wouldnt make sense for these guys to be carrying packs while at the base.
+//But I'm gonna keep these here cause I will need these for later when making the combat loadouts.
+// "B_TacticalPack_oli",
+// "B_TacticalPack_mcamo",
+// "B_AssaultPack_rgr",
+// "B_AssaultPack_khk",
+// "B_Kitbag_mcamo",
+// "B_AssaultPack_mcamo"
+// "B_Kitbag_rgr"
