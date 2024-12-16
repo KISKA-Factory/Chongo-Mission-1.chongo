@@ -188,23 +188,28 @@ class Airbase
 					exitOnCombat = OFF;
 				};
 			};
-			class SitGround
+			class SitLow
     		{
-					spawnPositions = "Airbase - Ambient Sit Ground Maintainers";
-					numberOfAgents = -1;
-					unitClasses[] = { "B_Soldier_unarmed_F" };
-					dynamicSim = ON;
-					canPath = OFF;
-				class AmbientAnim 
-				{
-			 		animationSet[] = {
-						"SIT_GROUND_UNARMED"
-					};
-					
-			 		equipmentLevel = "";
+				spawnPositions = "Airbase - Sit Low Armed";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Soldier_lite_F" };
+				dynamicSim = ON;
+				canPath = OFF;
 				
-			 		exitOnCombat = OFF;
-			 	};
+				class AmbientAnim
+				{
+					class animationSet 
+					{
+						snapToAnimations[] = {
+							"SIT_LOW"
+						};
+						
+						snapToRange = 2;
+					};
+					equipmentLevel = "";
+						
+					exitOnCombat = OFF;
+				};
     		};
 			class SittingInChairDesk
 			{
@@ -250,6 +255,48 @@ class Airbase
 					exitOnCombat = OFF;
 				};
 			};
+			class Lean
+			{
+				spawnPositions = "Airbase - Ambient Lean";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Soldier_lite_F" };
+				dynamicSim = ON;
+				canPath = OFF;
+				
+				class AmbientAnim
+				{
+					animationSet[] = {
+						"LEAN"
+					};
+
+					equipmentLevel = "";
+
+					exitOnCombat = OFF;
+				};
+			};
+			class SitLowUnarmed
+    		{
+				spawnPositions = "Airbase - Ambient Sit Low Unarmed";
+				numberOfAgents = -1;
+				unitClasses[] = { "B_Soldier_unarmed_F" };
+				dynamicSim = ON;
+				canPath = OFF;
+				
+				class AmbientAnim
+				{
+					class animationSet 
+					{
+						snapToAnimations[] = {
+							"SIT_CHAIR_UNARMED_3"
+						};
+						
+						snapToRange = 2;
+					};
+					equipmentLevel = "";
+						
+					exitOnCombat = OFF;
+				};
+    		};
 		};
 	};
 };
